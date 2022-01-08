@@ -2,6 +2,10 @@
     --orange-color: #b28756;
     --text-white: #fff;
     --light-grey: rgba(255, 255, 255, 0.781);
+    --sub-title: #CCC;
+    --bg-color: #f7f7f7;
+    --bg-color-second: #000;
+    --text-black: #000;
 }
 
 * {
@@ -13,6 +17,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -95,7 +100,7 @@ header {
     width: 100vw;
     height: 100%;
     display: inline-block;
-    margin-left: -4px;
+    margin-left: -3px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -158,5 +163,52 @@ header {
 
 .banner .pointer.active {
     background-color: var(--orange-color);
+}
+
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 12px;
+    color: var(--sub-title);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+    min-height: 100px;
+    background-color: #CCC;
+}
+
+.default.light {
+    background-color: var(--bg-color);
+}
+
+.default.light .section-title {
+    color: var(--text-black);
+}
+
+.default.dark {
+    background-color: var(--bg-color-second);
+}
+
+.default.dark .section-title {
+    color: var(--text-white);
 }
 
