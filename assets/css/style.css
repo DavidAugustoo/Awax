@@ -98,3 +98,65 @@ header {
     margin-left: -4px;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner span {
+    color: var(--orange-color);
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.banner a {
+    display: block;
+    background-color: var(--orange-color);
+    color: var(--text-white);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 25px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--orange-color);
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: var(--orange-color);
+}
+
